@@ -1,0 +1,12 @@
+﻿@model string
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<div class="createAcount">
+	<form asp-action="Create" method="post">
+		<div class="align-text-left text-light mb-4">
+			<label for="name">Name:</label>
+			<input name="name" class="form-control" />
+		</div>
+		<button type="submit" class="btn btn-light btn-createAcount">Create</button>
+	</form>
+</div>

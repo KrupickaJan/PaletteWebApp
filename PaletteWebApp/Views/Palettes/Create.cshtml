@@ -1,0 +1,20 @@
+﻿@{
+	ViewData["Title"] = "Drag and Drop Image Upload";
+}
+<div class="container">
+	<div class="wrapper">
+		<h2 class="display-4">Drag and Drop Image Upload</h2>
+	</div>
+
+	<div class="wrapper">
+		<form id="uploadForm" method="post" enctype="multipart/form-data" asp-action="UploadImage" asp-controller="Palettes">
+			<div id="dropArea" class="dropArea">
+				<span id="dropAreaText">Drag and drop an image here or click to select a file</span>
+			</div>
+			<input type="file" id="fileInput" name="file" style="display: none;" />
+			<div style="margin: 30px;">
+				<input class="paletteSize" type="number" name="paletteSize" placeholder="Palette size" min="1" max="16" /><button class="btn btn-dark" type="submit" id="uploadButton" disabled style="border-radius:0px; border-left: 0px;  width: 130px;">Extract palette</button>
+			</div>
+		</form>
+	</div>
+</div>

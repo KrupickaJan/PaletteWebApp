@@ -1,0 +1,17 @@
+﻿@using PaletteWebApp.ViewModels;
+@model LoginViewModel;
+
+<div class="createAcount">
+	<form asp-action="Login" method="post">
+		<input type="hidden" asp-for="ReturnUrl"/>
+		<div class="align-text-left text-light my-4">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" class="form-control" />
+		</div>
+		<div class="align-text-left text-light my-4">
+			<label asp-for="Password"></label>
+			<input asp-for="Password" class="form-control" type="password" />
+		</div>
+		<input type="submit" class="btn btn-light btn-createAcount" value="Log In" />
+	</form>
+</div>
